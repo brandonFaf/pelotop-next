@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import getData from '../../../api/getData';
+import getData from '../../../helpers/getData';
 export default async (request: NextApiRequest, response: NextApiResponse) => {
   const { user_id } = request.query;
   const { session_id } = request.cookies;

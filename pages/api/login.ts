@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import cookie from 'cookie';
-import auth from '../../api/authenticate';
+import auth from '../../helpers/authenticate';
 const login = async (_req: NextApiRequest, res: NextApiResponse) => {
   if (_req.method == 'POST') {
     const { username, password } = _req.body;
