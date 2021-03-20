@@ -19,7 +19,7 @@ const Data = ({ userId, setUser }) => {
   useEffect(() => {
     const f = async () => {
       let url = `/api/getData/${userId}`;
-      const response = await fetch('https://api.pelo.top' + url, {
+      const response = await fetch(url, {
         credentials: 'include'
       });
       if (response.ok) {
