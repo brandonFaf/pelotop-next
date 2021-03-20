@@ -1,4 +1,3 @@
-import { isToday } from 'date-fns';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Workout } from '../interfaces/data';
@@ -61,11 +60,7 @@ const DataList: React.FC<{
             {sorted.slice(0, length).map(w => {
               return (
                 <li key={w.id} style={{ paddingBottom: 10 }}>
-                  <Top
-                    style={{
-                      backgroundColor: isToday(w.date) ? 'yellow' : 'white'
-                    }}
-                  >
+                  <Top>
                     <div>
                       {w.rank}. {w.totalOutput} KJ
                     </div>

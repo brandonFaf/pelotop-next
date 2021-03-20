@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }) => (
       <meta name='theme-color' content='#000000' />
       <meta
         name='description'
-        content='See how your top outputs easily and how all your rides rank in comparison'
+        content='See your top peloton cycling workouts broken down by duration '
       />
       <link
         rel='stylesheet'
